@@ -1,45 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slider JS</title>
+  <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="wrapper-slide">
-            <div class="slide active"><img src="assets/image/krasotu%20(1).jpg" alt="nature"></div>
-            <div class="slide"><img src="assets/image/krasotu%20(3).jpg" alt="nature"></div>
-            <div class="slide"><img src="assets/image/krasotu%20(4).jpg" alt="nature"></div>
-            <div class="slide">
-                <img src="assets/image/krasotu.jpg" alt="nature">
-            </div>
+<div id="carousel" class="carousel">
+  <div id="slides-container" class="slides">
+    <div class="slide active" style="background-image: url(assets/image/krasotu.jpg)"></div>
+    <div class="slide" style="background-image: url(assets/image/krasotu\ \(1\).jpg)"></div>
+    <div class="slide" style="background-image: url(assets/image/krasotu\ \(3\).jpg)"></div>
+    <div class="slide" style="background-image: url(assets/image/krasotu\ \(4\).jpg)"></div>
+    
+  </div>
+</div>
 
-                <ol id="indicators" class="indicators-container">
-                    <li class="indicator active" data-slide-to="1"></li>
-                    <li class="indicator" data-slide-to="2"></li>
-                    <li class="indicator" data-slide-to="3"></li>
-                    <li class="indicator" data-slide-to="4"></li>
-                </ol>
-            </div>
-
-            <div class="buttons">
-                <button class="controls" id="btn-prev">&lt;</button>
-            
-                <button class="controls" id="btn-pause">&#10074;&#10074;</button>
-            
-                <button class="controls" id="btn-next">&gt;</button>
-              </div>
-                
-            
-
-
-    </div>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
