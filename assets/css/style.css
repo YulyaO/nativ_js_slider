@@ -1,11 +1,11 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  
+  box-sizing: border-box;
 }
 
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -42,19 +42,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   padding: 40px;
-
-  -webkit-transition: opacity 1s;
-       -o-transition: opacity 1s;
-          transition: opacity 1s;
-
-  opacity: 0;
+   transition: opacity 1s;
+   opacity: 0;
   background-position: 50% 50%;
   background-size: cover;
-
   font-size: 40px;
 }
 
@@ -68,15 +62,13 @@ body {
 
 .slide.active {
   z-index: 1;
-
   opacity: 1;
 }
 
 .controls {
   position: absolute;
   top: 0;
-
-  width: 100%;
+   width: 100%;
   height: 100%;
 }
 
@@ -87,39 +79,24 @@ body {
   z-index: 1;
   top: 0;
   bottom: 0;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .control-pause {
   top: calc(50% - 20vh);
   left: calc(50% - 20vh);
-
   height: 40vh;
   padding: 0;
-
-  -webkit-transition: opacity 0.25s ease-out;
-       -o-transition: opacity 0.25s ease-out;
-          transition: opacity 0.25s ease-out;
-
-  opacity: 0;
+transition: opacity 0.25s ease-out;
+opacity: 0;
 }
 
 .control-pause:hover,
 .control-pause:focus {
-  -webkit-transition: opacity 1s ease-in 0.5s;
-       -o-transition: opacity 1s ease-in 0.5s;
-          transition: opacity 1s ease-in 0.5s;
-
+  
+  transition: opacity 1s ease-in 0.5s;
   opacity: 1;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
@@ -133,8 +110,6 @@ body {
 .control-prev:hover,
 .control-prev:focus {
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background:    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   text-shadow: 0 0 10px #ffffff;
 }
@@ -148,9 +123,7 @@ body {
 .control-next:hover,
 .control-next:focus {
   color: #ffffff;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
-  background: -o-linear-gradient(right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  background:    linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   text-shadow: 0 0 10px #ffffff;
 }
 
@@ -158,20 +131,12 @@ body {
   position: absolute;
   z-index: 1;
   bottom: 0;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-
   width: 100%;
   height: 0;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -192,9 +157,8 @@ body {
 }
 
 .indicator.active {
-  border-color: #ffffff;
-  -webkit-box-shadow: 0 0 10px #ffffff;
-          box-shadow: 0 0 10px #ffffff;
+  border-color: #ffffff;  
+ box-shadow: 0 0 10px #ffffff;
 }
 
 @media (min-width: 992px) {
